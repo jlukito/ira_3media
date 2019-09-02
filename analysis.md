@@ -54,7 +54,7 @@ ggtsdisplay(xts_sock_reddit, plot.type = "partial", points = FALSE, smooth = TRU
             ylab = "Number of Posts")  #not stationary
 ```
 
-![](polcomm_ira3platform_analysis_files/figure-markdown_github/plottage-1.png)
+![](figure/plottage-1.png)
 
 ``` r
 ggtsdisplay(xts_sock_fb, plot.type = "partial", points = FALSE, smooth = TRUE, 
@@ -63,7 +63,7 @@ ggtsdisplay(xts_sock_fb, plot.type = "partial", points = FALSE, smooth = TRUE,
             ylab = "Number of Ads")  #not stationary
 ```
 
-![](polcomm_ira3platform_analysis_files/figure-markdown_github/plottage-2.png)
+![](figure/plottage-2.png)
 
 ``` r
 ggtsdisplay(xts_sock_tw, plot.type = "partial", points = FALSE, smooth = TRUE, 
