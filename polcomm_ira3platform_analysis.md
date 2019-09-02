@@ -41,14 +41,9 @@ xts_us2ru_disagree <- ts(pol_cont2$us2ru_disagree) %>% xts (order.by = pol_cont2
 Data Descriptives
 =================
 
-IRA Tweets and Retweets: <https://blog.twitter.com/en_us/topics/company/2018/enabling-further-research-of-information-operations-on-twitter.html>
-IRA Facebook Ads: <https://intelligence.house.gov/social-media-content/social-media-advertisements.htm>
-IRA Reddit Accounts: <https://www.reddit.com/wiki/suspiciousaccounts>
+IRA Tweets and Retweets: <https://blog.twitter.com/en_us/topics/company/2018/enabling-further-research-of-information-operations-on-twitter.html> <br/> IRA Facebook Ads: <https://intelligence.house.gov/social-media-content/social-media-advertisements.htm> <br/> IRA Reddit Accounts: <https://www.reddit.com/wiki/suspiciousaccounts> <br/>
 
-Approval of Trump: <https://www.realclearpolitics.com/epolls/other/trump_favorableunfavorable-5493.html#polls>
-Event count are from GDELT: <https://www.gdeltproject.org/data.html> Events were identified using the CAMEO codes: <http://data.gdeltproject.org/documentation/CAMEO.Manual.1.1b3.pdf>
-For events, "disagree" refers to the following categories: Demand (10), Disapprove (11), and Reject (12)
-For events, "threat" refers to the followig categories: Threat (13) and Military Posturing (15)
+Approval of Trump: <https://www.realclearpolitics.com/epolls/other/trump_favorableunfavorable-5493.html#polls> <br/> Event count are from GDELT: <https://www.gdeltproject.org/data.html> <br/> Events were identified using the CAMEO codes: <http://data.gdeltproject.org/documentation/CAMEO.Manual.1.1b3.pdf> <br/> For events, "disagree" refers to the following categories: Demand (10), Disapprove (11), and Reject (12) <br/> For events, "threat" refers to the followig categories: Threat (13) and Military Posturing (15) <br/>
 
 I plot the 8 time series below: the 3 time series of IRA activity, the 4 time series of Russia to US and US to Russian activity, and Trump's approval rating.
 
@@ -721,7 +716,7 @@ Box.test(residualz[,3], type='Ljung',lag=1) #interaction with verified actors
     ## data:  residualz[, 3]
     ## X-squared = 0.068385, df = 1, p-value = 0.7937
 
-These results confirm that the data are radomly distributed. A plot of the residuals appears to look like white noise.
+These results confirm that the data are radomly distributed. <br/> A plot of the residuals appears to look like white noise.
 
 ``` r
 ggtsdisplay(residualz[,1])
