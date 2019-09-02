@@ -72,7 +72,7 @@ ggtsdisplay(xts_sock_tw, plot.type = "partial", points = FALSE, smooth = TRUE,
             ylab = "Number of Tweets")  #not stationary
 ```
 
-![](polcomm_ira3platform_analysis_files/figure-markdown_github/plottage-3.png)
+![](figure/plottage-3.png)
 
 ``` r
 ggtsdisplay(xts_ru2us_threat, plot.type = "partial", points = FALSE, smooth = TRUE, 
@@ -81,7 +81,7 @@ ggtsdisplay(xts_ru2us_threat, plot.type = "partial", points = FALSE, smooth = TR
             ylab = "Number of Events")  #not stationary
 ```
 
-![](polcomm_ira3platform_analysis_files/figure-markdown_github/plottage-4.png)
+![](figure/plottage-4.png)
 
 ``` r
 ggtsdisplay(xts_ru2us_disagree, plot.type = "partial", points = FALSE, smooth = TRUE,
@@ -90,7 +90,7 @@ ggtsdisplay(xts_ru2us_disagree, plot.type = "partial", points = FALSE, smooth = 
             ylab = "Number of Events")  #not stationary
 ```
 
-![](polcomm_ira3platform_analysis_files/figure-markdown_github/plottage-5.png)
+![](figure/plottage-5.png)
 
 ``` r
 ggtsdisplay(xts_us2ru_threat, plot.type = "partial", points = FALSE, smooth = TRUE, 
@@ -99,7 +99,7 @@ ggtsdisplay(xts_us2ru_threat, plot.type = "partial", points = FALSE, smooth = TR
             ylab = "Number of Events")  #not stationary
 ```
 
-![](polcomm_ira3platform_analysis_files/figure-markdown_github/plottage-6.png)
+![](figure/plottage-6.png)
 
 ``` r
 ggtsdisplay(xts_us2ru_disagree, plot.type = "partial", points = FALSE, smooth = TRUE,
@@ -108,7 +108,7 @@ ggtsdisplay(xts_us2ru_disagree, plot.type = "partial", points = FALSE, smooth = 
             ylab = "Number of Events")  #not stationary
 ```
 
-![](polcomm_ira3platform_analysis_files/figure-markdown_github/plottage-7.png)
+![](figure/plottage-7.png)
 
 ``` r
 ggtsdisplay(xts_trump_approve, plot.type = "partial", points = FALSE, smooth = TRUE, #median follower of acct
@@ -117,7 +117,7 @@ ggtsdisplay(xts_trump_approve, plot.type = "partial", points = FALSE, smooth = T
             ylab = "Approval Rating")  #not stationary
 ```
 
-![](polcomm_ira3platform_analysis_files/figure-markdown_github/plottage-8.png)
+![](figure/plottage-8.png)
 
 Plot of IRA activity on Facebook, Twitter, and Reddit
 
@@ -128,7 +128,7 @@ ts.plot(ts(xts_sock_fb), ts(xts_sock_tw), ts(xts_sock_reddit), gpars = list(col 
   abline(v=550, col="dark grey", lty = 2)
 ```
 
-![](polcomm_ira3platform_analysis_files/figure-markdown_github/plot-1.png)
+![](figure/plot-1.png)
 
     ## integer(0)
 
@@ -322,7 +322,7 @@ ts.plot(ts(fd_sock_fb), ts(fd_sock_reddit), ts(fd_sock_tw), gpars = list(col = c
         xlab = "Daily", ylab = "# of Posts")
 ```
 
-![](polcomm_ira3platform_analysis_files/figure-markdown_github/fracdiff-1.png) All series had unit roots and were first-differenced.
+![](figure/fracdiff-1.png) All series had unit roots and were first-differenced.
 
 Cointegration Test
 ------------------
@@ -386,7 +386,7 @@ ts.plot(ts(xts_sock_tw), ts(xts_trump_approve), gpars = list(col = c("blue","bla
         xlab = "Daily", ylab = "-")
 ```
 
-![](polcomm_ira3platform_analysis_files/figure-markdown_github/coint_trumptw-1.png)
+![](figure/coint_trumptw-1.png)
 
 ``` r
 cointegration_tw_trump <- data.frame(xts_sock_tw, xts_trump_approve) %>% ts()
@@ -620,7 +620,7 @@ plot(irf(varresult_x, impulse = "sock_reddit", response = "sock_tw", n.ahead = 5
   title(sub = "Shock = Reddit // Response = Twitter")
 ```
 
-![](polcomm_ira3platform_analysis_files/figure-markdown_github/irfs-x-1.png)
+![](figure/irfs-x-1.png)
 
     ## integer(0)
 
@@ -629,7 +629,7 @@ plot(irf(varresult_x, impulse = "sock_tw", response = "sock_reddit", n.ahead = 5
   title(sub = "Shock = Twitter // Response = Reddit")
 ```
 
-![](polcomm_ira3platform_analysis_files/figure-markdown_github/irfs-x-2.png)
+![](figure/irfs-x-2.png)
 
     ## integer(0)
 
@@ -722,16 +722,16 @@ These results confirm that the data are radomly distributed. <br/> A plot of the
 ggtsdisplay(residualz[,1])
 ```
 
-![](polcomm_ira3platform_analysis_files/figure-markdown_github/plotter-1.png)
+![](figure/plotter-1.png)
 
 ``` r
 ggtsdisplay(residualz[,2])
 ```
 
-![](polcomm_ira3platform_analysis_files/figure-markdown_github/plotter-2.png)
+![](figure/plotter-2.png)
 
 ``` r
 ggtsdisplay(residualz[,3])
 ```
 
-![](polcomm_ira3platform_analysis_files/figure-markdown_github/plotter-3.png)
+![](figure/plotter-3.png)
