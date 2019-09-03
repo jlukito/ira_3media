@@ -11,7 +11,7 @@ This git repo includes files for replicating results from the paper, "Coordinati
 5. Trump favorables: https://www.realclearpolitics.com/epolls/other/trump_favorableunfavorable-5493.html
 
 ## Files in this repo
-1. Social media wrangling (counting messages per day): https://github.com/jlukito/ira_3media/blob/master/sm_wrangling.md
+1. Social media wrangling: https://github.com/jlukito/ira_3media/blob/master/sm_wrangling.md
 2. Daily Time Series Data: https://github.com/jlukito/ira_3media/blob/master/ts_data.csv
 3. Final Data Analysis: https://github.com/jlukito/ira_3media/blob/master/final_analysis.md
 
