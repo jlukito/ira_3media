@@ -1,6 +1,6 @@
-IRA Social Media Activity - Twitter, FB and Reddit
+IRA Social Media Activity - Data Analysis
 ================
-jlukito
+jlukito  
 September 2, 2019
 
 Data Import
