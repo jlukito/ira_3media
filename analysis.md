@@ -735,3 +735,5 @@ ggtsdisplay(residualz[,3])
 ```
 
 ![](figure/plotter-3.png)
+
+Licensed under [CC BY](https://creativecommons.org/licenses/by/2.0/)
